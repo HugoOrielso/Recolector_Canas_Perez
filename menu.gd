@@ -1,0 +1,10 @@
+extends Control
+
+func _ready() -> void:
+	$Opciones/Jugar.grab_focus()
+
+func _on_jugar_pressed() -> void:
+	get_tree().change_scene_to_file("res://nivel.tscn")
+
+func _on_salir_pressed() -> void:
+	get_tree().quit()

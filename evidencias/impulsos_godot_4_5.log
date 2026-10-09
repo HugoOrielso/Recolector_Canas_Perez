@@ -1,0 +1,6 @@
+Godot Engine v4.5.stable.official.876b29033 - https://godotengine.org
+
+Impulso=5.0, masa=1, velocidad_x=5.0
+Impulso=20.0, masa=1, velocidad_x=20.0
+Impulso=100.0, masa=1, velocidad_x=100.0
+Comparacion de impulsos aislados: 3 valores correctos.

@@ -1,0 +1,25 @@
+Godot Engine v4.5.stable.official.876b29033 - https://godotengine.org
+
+OK: Mapa: 74 baldosas de suelo y 16 de plataformas
+OK: Hueco entre x=324 y x=378
+OK: TileSet de 18 x 18
+OK: Colisiones definidas en el TileSet
+OK: Seis monedas y tres vidas iniciales
+OK: El jugador cae y se sostiene en el suelo
+OK: Velocidad horizontal de 130 px/s
+OK: Salto real desde el suelo a P1
+OK: Recogida real de las monedas del inicio y P1
+OK: Salto real desde P1 a P2
+OK: El sprite se voltea al caminar a la izquierda
+OK: Animación quieto al soltar la dirección
+OK: HUD permanece fijo al desplazar la cámara
+OK: Pinchos descuentan una vida y reaparecen al inicio
+OK: Barra de vidas sincronizada
+OK: Caída por el hueco descuenta una vida
+OK: Tercera vida perdida regresa al menú
+OK: Jugar inicia una partida nueva
+OK: Las seis Area2D emiten recogida y desaparecen
+OK: Victoria visible y movimiento detenido
+OK: Victoria regresa al menú después de dos segundos
+OK: Reto: el jugador empuja la caja con impulsos
+RESULTADO: 22 comprobaciones, 0 fallos
