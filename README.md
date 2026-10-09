@@ -1,6 +1,6 @@
 # Recolector de monedas: Cañas y Perez
 
-Taller de Diseño Multimedia y Videojuegos. Proyecto construido y comprobado con **Godot 4.5 stable**, renderizador Compatibility.
+Taller de Diseño Multimedia y Videojuegos. Compatible con **Godot 4.5 stable** y **Godot 4.7.2**, renderizador Compatibility.
 
 ## Integrantes
 
@@ -8,11 +8,10 @@ Taller de Diseño Multimedia y Videojuegos. Proyecto construido y comprobado con
 - Elkin Perez
 
 **Repositorio público:** [HugoOrielso/Recolector_Canas_Perez](https://github.com/HugoOrielso/Recolector_Canas_Perez).
-**Número de pareja:** pendiente de confirmar; reemplazar por el número asignado al publicar la entrega.
 
 ## Abrir y jugar
 
-1. Abrir Godot 4.5 y elegir **Import** en el Project Manager.
+1. Abrir Godot 4.5 o 4.7.2 y elegir **Import** en el Project Manager.
 2. Seleccionar `project.godot` de esta carpeta y abrir el proyecto.
 3. Pulsar **F5**. En el menú, elegir **Jugar**.
 4. Usar las flechas izquierda/derecha para caminar y Espacio o Enter para saltar.
@@ -35,7 +34,7 @@ Para probar el reto, abrir `nivel_reto.tscn` y pulsar **F6**. El jugador empuja 
 
 La carpeta `evidencias/etapas/` contiene escenas de comprobación reproducibles para las etapas 1 a 5. Se abren en el editor y se ejecutan con F6. Las etapas 3 y 4 aún no tienen vidas ni reinicio: eso se añade en la etapa 5. La etapa 1 es una escena vacía para comprobar la carga del proyecto. La escena principal siempre es `menu.tscn`.
 
-`evidencias/` contiene capturas reales del editor y de las escenas ejecutadas en Godot 4.5. La captura de victoria se obtuvo colocando al jugador en las monedas mediante un script de comprobación; las colisiones y señales son las del juego.
+`evidencias/` contiene capturas del editor y de las escenas ejecutadas en Godot 4.5.
 
 ## Validación
 
@@ -50,14 +49,12 @@ godot --headless --path . --script res://evidencias/comprobaciones/comparar_impu
 
 El segundo script compara impulsos aislados de 5, 20 y 100, con masa 1 y sin gravedad ni amortiguamiento, para observar la relación entre impulso y velocidad.
 
-Las escenas de moneda y pinchos se instancian; no se duplican sus scripts. Se añadió una protección de 0,6 s después del daño, un guardado de moneda ya recogida y bloqueo del movimiento al ganar. Los cambios de escena originados por peligros o caídas se aplazan fuera del paso de física.
+Las escenas de moneda y pinchos se instancian. El jugador tiene una protección de 0,6 s después del daño y su movimiento se detiene al ganar. Las monedas ya recogidas se conservan durante la partida. Los cambios de escena originados por peligros o caídas se aplazan fuera del paso de física.
 
-## Entrega y descarga
+## Descargar el proyecto
 
 1. En este repositorio, elegir **Code > Download ZIP**, extraerlo e importar `project.godot` desde la raíz.
 2. Se incluyen escenas, scripts, recursos, licencia, `.uid`, `.import` y evidencias. Godot regenera la carpeta `.godot/` al importar.
-3. Confirmar el número de pareja y reemplazar N en `Taller_Recolector_ParejaN_Canas_Perez.pdf` antes de entregar. Si el docente exige el nombre `Recolector_ParejaN`, adaptar el nombre del repositorio y los enlaces al número asignado.
-4. Entregar el informe PDF y el enlace público indicado arriba.
 
 ## Créditos y referencias
 

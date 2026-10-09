@@ -24,9 +24,7 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		$AnimatedSprite2D.play("quieto")
 	move_and_slide()
-	# Los bordes de la cámara también delimitan el recorrido horizontal.
 	position.x = clampf(position.x, 7.0, 713.0)
-	# Reto opcional: solo tiene efecto cuando existe una Caja (RigidBody2D).
 	for i in get_slide_collision_count():
 		var choque := get_slide_collision(i)
 		var cuerpo = choque.get_collider()

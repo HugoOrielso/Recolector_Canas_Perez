@@ -24,7 +24,6 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	proteccion = maxf(proteccion - delta, 0.0)
 	if not terminado and jugador.position.y > 300 and proteccion <= 0.0:
-		# También aplazamos los cambios de escena originados por una caída.
 		perder_vida.call_deferred()
 
 func _on_moneda_recogida() -> void:
@@ -41,7 +40,6 @@ func _on_moneda_recogida() -> void:
 		get_tree().change_scene_to_file("res://menu.tscn")
 
 func perder_vida() -> void:
-	# Una misma colisión solo puede descontar una vida.
 	if terminado or proteccion > 0.0:
 		return
 	vidas -= 1
