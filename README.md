@@ -7,7 +7,7 @@ Taller de Diseño Multimedia y Videojuegos. Proyecto construido y comprobado con
 - Hugo Cañas
 - Elkin Perez
 
-**Repositorio público:** pendiente de agregar por los integrantes.
+**Repositorio público:** [HugoOrielso/Recolector_Canas_Perez](https://github.com/HugoOrielso/Recolector_Canas_Perez).
 **Número de pareja:** pendiente de confirmar; reemplazar por el número asignado al publicar la entrega.
 
 ## Abrir y jugar
@@ -52,13 +52,12 @@ El segundo script compara impulsos aislados de 5, 20 y 100, con masa 1 y sin gra
 
 Las escenas de moneda y pinchos se instancian; no se duplican sus scripts. Se añadió una protección de 0,6 s después del daño, un guardado de moneda ya recogida y bloqueo del movimiento al ganar. Los cambios de escena originados por peligros o caídas se aplazan fuera del paso de física.
 
-## Publicar el repositorio después
+## Entrega y descarga
 
-1. Crear en GitHub o GitLab un repositorio **público**. El nombre de la guía es `Recolector_ParejaN`; sustituir N por el número asignado.
-2. Subir **el contenido** de esta carpeta, con `project.godot` en la raíz. Incluir los `.uid` y `.import`, las imágenes y su licencia.
-3. Excluir `.godot/`, como ya indica `.gitignore`. No subir los ejecutables de Godot ni la carpeta temporal del espacio de trabajo.
-4. Reemplazar el enlace pendiente en este README y en la portada del informe. Renombrar el PDF como `Taller_Recolector_ParejaN_Canas_Perez.pdf`.
-5. Comprobar el enlace en una ventana privada y abrir una descarga limpia con Godot 4.5 antes de entregar.
+1. En este repositorio, elegir **Code > Download ZIP**, extraerlo e importar `project.godot` desde la raíz.
+2. Se incluyen escenas, scripts, recursos, licencia, `.uid`, `.import` y evidencias. Godot regenera la carpeta `.godot/` al importar.
+3. Confirmar el número de pareja y reemplazar N en `Taller_Recolector_ParejaN_Canas_Perez.pdf` antes de entregar. Si el docente exige el nombre `Recolector_ParejaN`, adaptar el nombre del repositorio y los enlaces al número asignado.
+4. Entregar el informe PDF y el enlace público indicado arriba.
 
 ## Créditos y referencias
 
